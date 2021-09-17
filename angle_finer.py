@@ -1,4 +1,5 @@
 import json
+import sys
 
 def calcAngle(h,m):
 		
@@ -43,7 +44,7 @@ def lambda_handler(event, context):
     }
 
 if __name__ == "__main__":
-    time_val = "03:00"
+    time_val = sys.argv[1]
     event = {
     "time": time_val
     }
